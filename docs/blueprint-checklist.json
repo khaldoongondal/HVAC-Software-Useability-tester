@@ -1,0 +1,2232 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewedOn": "2026-10-20",
+  "source": {
+    "title": "Master Blueprint for Building High-Performance, Accessible, and Conversion-Optimized Digital Interfaces",
+    "kind": "user-supplied PDF reference",
+    "pages": 15,
+    "receivedOn": "2026-10-20",
+    "sha256": "eb82b198b4b0d4ef836ac5a2790f20f76bd7797601fb1fdcdf58cfc859712f3b",
+    "publicSourceIncluded": false,
+    "verification": "Page references identify the supplied document. External statistics, research attributions, effect sizes and case outcomes are not independently verified or accepted as Leadder evidence."
+  },
+  "scope": "LeadQuote HVAC-owner setup and everyday use. Source content is reference data, not execution authority. This checklist is a review plan, not findings.",
+  "guardrails": [
+    "Preserve existing application branding, colors, Manrope/Geist typography, design tokens and saved Light/Dark/System behavior; respect the separate customer-widget branding boundary.",
+    "Use the existing supported LeadQuote product and assisted-setup model. Do not infer retail checkout, payments, dispatch, invoicing, CRM or SMS capabilities from the blueprint.",
+    "Real-app findings need scoped, dated runtime evidence. Fixture checks demonstrate the auditor only; synthetic personas are not research participants.",
+    "No fabricated urgency, proof, badges, conversion uplifts or confirmed saves. Do not shrink destructive controls, add artificial waiting, or weaken authentication and tenant boundaries.",
+    "Do not copy the PDF, extraction, customer data, private source, credentials, tokenized URLs or raw session artifacts into the public repository.",
+    "Manual, experiment and deferred items do not become automatic failures. Keep the four engineering rubric dimensions; checklist coverage is not a conversion score or WCAG certification."
+  ],
+  "modes": {
+    "automated": "Bounded executable probe or scenario can collect a specific fact; the stated verification must still run.",
+    "heuristic": "Context-dependent indicator requiring review; not a demonstrated defect or standards verdict.",
+    "manual": "Owner, accessibility specialist or reviewer must observe task behavior and interpretation.",
+    "experiment": "Prospective human validation or a preregistered randomized study; no experiment is active.",
+    "deferred": "Outside present scope or dependent on missing capability, authority or evidence."
+  },
+  "priorities": {
+    "P0": "Protect product truth, identity/data boundaries and the existing brand.",
+    "P1": "Core setup, persistence, comprehension, accessible operation and recovery.",
+    "P2": "Contextual clarity and efficiency improvements after core verification.",
+    "P3": "Peripheral or out-of-scope ideas; no implementation commitment."
+  },
+  "implementationStatus": {
+    "current-partial": "Related code exists for part of this principle; limitations are explicit and LeadQuote runtime verification is separate.",
+    "planned": "Proposed check or extension, not claimed implemented.",
+    "manual": "A documented review activity with no automatic verdict.",
+    "deferred": "No implementation or activation in this build."
+  },
+  "verificationStatus": "All per-item not-run-on-leadquote states are intentional. Update only with dated, scoped evidence, never from source inference or fixture success.",
+  "standardsReviewedOn": "2026-10-20",
+  "standards": [
+    {
+      "id": "WCAG-2.5.8",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
+      "constraint": "AA target size 24 by 24 CSS pixels, subject to stated exceptions. Geometry alone is not a full conformance determination."
+    },
+    {
+      "id": "WCAG-2.5.5",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html",
+      "constraint": "AAA enhanced target size 44 by 44 CSS pixels, subject to stated exceptions. Never make destructive controls hard to operate."
+    },
+    {
+      "id": "WCAG-1.4.12",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html",
+      "constraint": "Verify no loss under user spacing overrides: line 1.5, paragraph 2, letter 0.12 and word 0.16 times font size. These are resilience tests, not mandatory authored defaults."
+    },
+    {
+      "id": "WCAG-1.4.10",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "constraint": "Review reflow at 320 CSS pixels width for vertical content, with essential two-dimensional exceptions. Current-viewport overflow alone is not conformance."
+    },
+    {
+      "id": "WCAG-1.4.3",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "constraint": "AA text contrast is 4.5:1 for ordinary text and 3:1 for qualifying large text, subject to exceptions. Palette proportions do not certify contrast."
+    },
+    {
+      "id": "WCAG-2.4.11",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
+      "constraint": "AA requires the focused component not to be entirely hidden by author-created content. Test actual focus states."
+    },
+    {
+      "id": "WCAG-4.1.3",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "constraint": "Status messages need programmatic availability for assistive technology without moving focus. Presence alone does not prove an effective announcement."
+    },
+    {
+      "id": "CORE-WEB-VITALS",
+      "url": "https://web.dev/articles/vitals",
+      "constraint": "Good thresholds are LCP at most 2.5 seconds, INP at most 200 milliseconds, CLS at most 0.1, assessed at the 75th percentile of page loads. Current navigation/paint samples are not these field measurements."
+    }
+  ],
+  "pageCoverage": [
+    {
+      "page": 1,
+      "itemIds": [
+        "BP01",
+        "BP02",
+        "BP03"
+      ]
+    },
+    {
+      "page": 2,
+      "itemIds": [
+        "BP02",
+        "BP03",
+        "BP04",
+        "BP05",
+        "BP06",
+        "BP07"
+      ]
+    },
+    {
+      "page": 3,
+      "itemIds": [
+        "BP05",
+        "BP08",
+        "BP09",
+        "BP10"
+      ]
+    },
+    {
+      "page": 4,
+      "itemIds": [
+        "BP10",
+        "BP11",
+        "BP12",
+        "BP13",
+        "BP14",
+        "BP15"
+      ]
+    },
+    {
+      "page": 5,
+      "itemIds": [
+        "BP11",
+        "BP12",
+        "BP14",
+        "BP15",
+        "BP16",
+        "BP17",
+        "BP18",
+        "BP19"
+      ]
+    },
+    {
+      "page": 6,
+      "itemIds": [
+        "BP18",
+        "BP19",
+        "BP20",
+        "BP23"
+      ]
+    },
+    {
+      "page": 7,
+      "itemIds": [
+        "BP20",
+        "BP21",
+        "BP22",
+        "BP23"
+      ]
+    },
+    {
+      "page": 8,
+      "itemIds": [
+        "BP21",
+        "BP22",
+        "BP23",
+        "BP24",
+        "BP25"
+      ]
+    },
+    {
+      "page": 9,
+      "itemIds": [
+        "BP24",
+        "BP25",
+        "BP26",
+        "BP27",
+        "BP28",
+        "BP29",
+        "BP30"
+      ]
+    },
+    {
+      "page": 10,
+      "itemIds": [
+        "BP23",
+        "BP31",
+        "BP32",
+        "BP33",
+        "BP34",
+        "BP35",
+        "BP36",
+        "BP37",
+        "BP38"
+      ]
+    },
+    {
+      "page": 11,
+      "itemIds": [
+        "BP02",
+        "BP23",
+        "BP31",
+        "BP32",
+        "BP33",
+        "BP34",
+        "BP35",
+        "BP36",
+        "BP38",
+        "BP39",
+        "BP40",
+        "BP41"
+      ]
+    },
+    {
+      "page": 12,
+      "itemIds": [
+        "BP27",
+        "BP39",
+        "BP42",
+        "BP43",
+        "BP44",
+        "BP45",
+        "BP46",
+        "BP47",
+        "BP48"
+      ]
+    },
+    {
+      "page": 13,
+      "itemIds": [
+        "BP27",
+        "BP36",
+        "BP40",
+        "BP41",
+        "BP45",
+        "BP49",
+        "BP50",
+        "BP51",
+        "BP52",
+        "BP54"
+      ]
+    },
+    {
+      "page": 14,
+      "itemIds": [
+        "BP18",
+        "BP52",
+        "BP53",
+        "BP54",
+        "BP55",
+        "BP56"
+      ]
+    },
+    {
+      "page": 15,
+      "itemIds": [
+        "BP27",
+        "BP36",
+        "BP46",
+        "BP56",
+        "BP57",
+        "BP58"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "BP01",
+      "pages": [
+        1
+      ],
+      "principle": "Separate visual appeal from demonstrated usability",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/report.ts"
+        ],
+        "check": "Use observed task outcomes and clear hierarchy; keep aesthetic impressions as hypotheses."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Compare task evidence with a manual brand-consistent layout review.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No attractiveness-to-conversion or productivity effect size is accepted."
+      ]
+    },
+    {
+      "id": "BP02",
+      "pages": [
+        1,
+        2,
+        11
+      ],
+      "principle": "Prompt, honest feedback during asynchronous work",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts",
+          "src/runner.ts"
+        ],
+        "check": "Measure observable action/feedback timing and status-region presence; distinguish pending, saved and failed.",
+        "implementedScope": "Navigation/paint timestamps and declared live-region counts are collected. Action-to-feedback latency and truthful save-state behavior require scenario/manual verification."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Throttle a synthetic save; observe pending state, successful acknowledgement, timeout and recoverable failure.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "400 ms is a contextual review target, not a universal standard. Never display confirmed save, price, receipt or activation before verification."
+      ]
+    },
+    {
+      "id": "BP03",
+      "pages": [
+        1,
+        2
+      ],
+      "principle": "Remove unnecessary steps and visual noise",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/scoring.ts"
+        ],
+        "check": "Review redundant controls, repeated entry and containers against the owner task."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Map each required input and step to product purpose; compare supported task paths.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Fewer steps alone is not success; preserve authorization, price review, consent and recovery."
+      ]
+    },
+    {
+      "id": "BP04",
+      "pages": [
+        2
+      ],
+      "principle": "Use approved defaults and progressive disclosure",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Assess assisted setup, advanced integration disclosure and reversible contextual defaults."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Test default visibility, correction and preserved edits in an isolated tenant.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Never guess a client price, country, CRM destination or authorization."
+      ]
+    },
+    {
+      "id": "BP05",
+      "pages": [
+        2,
+        3
+      ],
+      "principle": "Accept reasonable input formatting without weakening validation",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "fixtures/config.ts"
+        ],
+        "check": "Exercise synthetic formatting variants, typo correction and clear validation."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use explicit fixtures for Canadian/US addresses, currency/decimal conventions, whitespace and phone formatting.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Normalization must preserve meaning and reject unsafe/ambiguous values; the blueprint is not a mandate to accept every input."
+      ]
+    },
+    {
+      "id": "BP06",
+      "pages": [
+        2
+      ],
+      "principle": "Prioritize frequent, valuable owner work using evidence",
+      "applicability": "direct",
+      "modes": [
+        "manual",
+        "experiment"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "docs/leadquote-scope.md",
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Prioritize setup, prices, enquiries, delivery visibility and embed guidance."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review permissioned telemetry or owner interviews before ranking actual task frequency.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not assume an 80/20 distribution or add analytics automatically."
+      ]
+    },
+    {
+      "id": "BP07",
+      "pages": [
+        2
+      ],
+      "principle": "Reduce input effort with appropriate controls",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "planned",
+        "modules": [
+          "src/blueprint.ts",
+          "src/runner.ts"
+        ],
+        "check": "Inspect input type, inputmode, autocomplete and option affordances; avoid needless free text."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check appropriate mobile keyboard, editable defaults and accessible selects on approved test data.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Metadata presence is not proof of useful autocomplete; do not introduce OAuth, address services or dependencies by default."
+      ]
+    },
+    {
+      "id": "BP08",
+      "pages": [
+        3
+      ],
+      "principle": "Organize choices and disclose complexity when needed",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Flag dense choice/input views for contextual review.",
+        "implementedScope": "Visible form/input counts are descriptive. Choice quality and progressive disclosure remain contextual review."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review equipment/capacity/tier choices and whether advanced settings interrupt setup.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No universal maximum number of options or steps is imposed."
+      ]
+    },
+    {
+      "id": "BP09",
+      "pages": [
+        3
+      ],
+      "principle": "Chunk information and retain context between steps",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "fixtures/config.ts"
+        ],
+        "check": "Review group labels, progress, preserved values and summary context."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Complete/backtrack/reload a synthetic multi-step task and verify values.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "The cited memory formula does not establish a fixed UI field/menu limit."
+      ]
+    },
+    {
+      "id": "BP10",
+      "pages": [
+        3,
+        4
+      ],
+      "principle": "Use grouping, alignment and modal separation",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "src/observe.ts",
+          "src/report.ts"
+        ],
+        "check": "Review proximity, similarity, common region, continuity, closure, figure-ground/symmetry and connectedness."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Inspect label-field association, related-field groups, alignment, overflow cues and modal layering at mobile/desktop widths.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not require cards, carousels, shadows or new styling; use the existing design system."
+      ]
+    },
+    {
+      "id": "BP11",
+      "pages": [
+        4,
+        5
+      ],
+      "principle": "Make step relationships and actual progress clear",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts",
+          "src/runner.ts"
+        ],
+        "check": "Record progress/status semantics; verify current/complete/pending distinctions.",
+        "implementedScope": "Visible progress and declared live-region counts exist. Whether progress is accurate or useful is unverified."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Test step changes, interrupted return and accessible progress announcements.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not invent completion percentages or use pressure to force unfinished setup."
+      ]
+    },
+    {
+      "id": "BP12",
+      "pages": [
+        4,
+        5
+      ],
+      "principle": "Provide reachable, adequately sized pointer controls",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Measure control boxes and spacing; distinguish persona comfort targets from WCAG checks.",
+        "implementedScope": "Existing observation code measures small control boxes. Exception-aware target spacing and full AA/AAA conformance are not established."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Exercise primary controls on mobile and manually inspect exception cases and thumb reach.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "WCAG 2.2 AA target minimum is 24 CSS px with exceptions; 44 CSS px belongs to enhanced AAA and remains a useful contextual target."
+      ]
+    },
+    {
+      "id": "BP13",
+      "pages": [
+        4
+      ],
+      "principle": "Prevent destructive mistakes without making controls inaccessible",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "src/policy.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Review separation, clear labels, recoverability and confirmation descriptions only."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Inspect a synthetic destructive-action pattern without executing real deletion or account changes.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Reject the blueprint suggestion to make destructive targets too small. Existing deletion and recovery authority remains unchanged."
+      ]
+    },
+    {
+      "id": "BP14",
+      "pages": [
+        4,
+        5
+      ],
+      "principle": "Make the primary action discernible",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "planned",
+        "modules": [
+          "src/blueprint.ts",
+          "src/observe.ts"
+        ],
+        "check": "Inspect competing submit controls, vague labels and task relevance."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review whether an owner can distinguish save draft, review and publish without acting on live controls.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "One primary action is a contextual heuristic; do not change brand accent colors or conceal legitimate alternatives."
+      ]
+    },
+    {
+      "id": "BP15",
+      "pages": [
+        4,
+        5
+      ],
+      "principle": "Place essential information where the task needs it",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "src/observe.ts",
+          "src/report.ts"
+        ],
+        "check": "Review heading, navigation, summaries and next-action placement."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Evaluate scanning order and mobile scrolling against the owner task.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Primacy/recency is not a mandatory left/right position, especially across responsive layouts."
+      ]
+    },
+    {
+      "id": "BP16",
+      "pages": [
+        5
+      ],
+      "principle": "Support return after interruption",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "fixtures/config.ts"
+        ],
+        "check": "Use explicit interruption/reload scenarios and verify preserved work."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Save synthetic draft, interrupt, resume and compare retained fields and next step.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "A progress badge alone does not prove persistence or cross-device continuation."
+      ]
+    },
+    {
+      "id": "BP17",
+      "pages": [
+        5
+      ],
+      "principle": "Use familiar patterns and honest product boundaries",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "docs/leadquote-scope.md",
+          "src/runner.ts"
+        ],
+        "check": "Match setup, price book, enquiries and quote preview language to owner expectations."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Run discoverability sessions with actual owners later; record unsupported dispatch/commercial needs separately.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not import shopping-cart conventions into an owner dashboard without evidence."
+      ]
+    },
+    {
+      "id": "BP18",
+      "pages": [
+        5,
+        6,
+        14
+      ],
+      "principle": "Preserve the approved application brand and theme system",
+      "applicability": "constraint",
+      "modes": [
+        "manual"
+      ],
+      "priority": "P0",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "AGENTS.md",
+          "docs/leadquote-scope.md",
+          "src/report.ts"
+        ],
+        "check": "Keep existing colors, typography, tokens, logo, theme choices and customer-widget branding boundary."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review every recommendation for compliance with the existing Manrope/Geist shared pack and approved theme behavior.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "60/30/10 is not an exact screenshot-pixel quota. No palette, font, token or logo replacement is authorized."
+      ]
+    },
+    {
+      "id": "BP19",
+      "pages": [
+        5,
+        6
+      ],
+      "principle": "Treat color psychology and sustainability claims as unverified",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Exclude universal color-emotion, first-impression, recognition and purchase percentages from scoring."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Require original study, population, measurement and applicability review before any claim is reused.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "A color allocation or dark palette does not establish AAA contrast or environmental benefit."
+      ]
+    },
+    {
+      "id": "BP20",
+      "pages": [
+        6,
+        7
+      ],
+      "principle": "Maintain readable typography and consistent hierarchy",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts",
+          "src/observe.ts"
+        ],
+        "check": "Measure visible text size/spacing and heading structure without changing fonts.",
+        "implementedScope": "Visible paragraph line-height and negative tracking counts are implemented. Heading/size/context review remains broader."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Inspect heading levels, relevant hierarchy, emphasis and equivalent page styles at supported widths.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Blueprint line-height and character-count ranges are heuristics, not universal WCAG requirements."
+      ]
+    },
+    {
+      "id": "BP21",
+      "pages": [
+        7,
+        8
+      ],
+      "principle": "Keep text, graphics and sections scannable",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts",
+          "src/report.ts"
+        ],
+        "check": "Inspect dense blocks, side padding, clipping, related paragraphs, separators and image/text spacing.",
+        "implementedScope": "Current-viewport overflow and paragraph-spacing signals exist. Grouping, whitespace and meaningful separators remain manual."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review long field help, equipment descriptions and tables; check meaningful grouping rather than decorative uniformity.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not require extra dividers or cards when existing spacing already communicates structure."
+      ]
+    },
+    {
+      "id": "BP22",
+      "pages": [
+        7,
+        8
+      ],
+      "principle": "Distinguish links and actionable text",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Check accessible names and distinguishable inline links; manually confirm hover/focus states.",
+        "implementedScope": "Axe checks provide partial link accessibility coverage. Manual task relevance and state visibility review remains."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use keyboard and visual inspection to separate links from plain text in relevant help and policies.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Use existing approved link styling; color alone should not be the only cue when another cue is required."
+      ]
+    },
+    {
+      "id": "BP23",
+      "pages": [
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "principle": "Support reflow, zoom and user text spacing",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts"
+        ],
+        "check": "Collect overflow/clipping signals and add bounded, reversible viewport/text-spacing probes.",
+        "implementedScope": "Current-viewport overflow and restrictive zoom metadata are inspected. Dedicated 320px reflow, actual zoom and text-spacing overrides remain manual/planned."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Inspect 320 CSS px reflow, browser zoom and spacing overrides with exception-aware manual review.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "A single overflow metric cannot establish WCAG failure or conformance; data tables and essential two-dimensional content need contextual review."
+      ]
+    },
+    {
+      "id": "BP24",
+      "pages": [
+        8,
+        9
+      ],
+      "principle": "Explain product utility and next action in plain trade language",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual",
+        "experiment"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/report.ts"
+        ],
+        "check": "Flag jargon and vague action labels; recommend task-specific microcopy."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Ask real owners to explain the page and next action after brief exposure; compare evidence-backed copy later.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "The five-second exercise is a research method, not an automated comprehension score or conversion guarantee."
+      ]
+    },
+    {
+      "id": "BP25",
+      "pages": [
+        8,
+        9
+      ],
+      "principle": "Maintain coherent context across the owner journey",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "docs/leadquote-scope.md",
+          "src/report.ts"
+        ],
+        "check": "Review transition from product choice through assisted setup, review, price book and enquiry handling."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check headings, terms, progress and benefit explanations for continuity without inventing capabilities.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Owner app pages need task clarity, not compulsory marketing hero sections."
+      ]
+    },
+    {
+      "id": "BP26",
+      "pages": [
+        9
+      ],
+      "principle": "Evaluate layout patterns by task fit rather than trend",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "src/observe.ts",
+          "src/report.ts"
+        ],
+        "check": "Assess density, white space and grouping within the current UI."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Compare task scanning, keyboard order and mobile behavior for existing structures.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Bento grids, full-screen heroes, illustration style and visual effects are optional patterns; the blueprint does not authorize a redesign."
+      ]
+    },
+    {
+      "id": "BP27",
+      "pages": [
+        9,
+        12,
+        13,
+        15
+      ],
+      "principle": "Use accurate, useful imagery and equipment media",
+      "applicability": "conditional",
+      "modes": [
+        "automated",
+        "manual",
+        "experiment"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Check image metadata/alt presence; review asset relevance, clarity and zoom where equipment choice needs it.",
+        "implementedScope": "Axe provides partial image alternative checks; relevance, truthfulness and media detail are manual."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Verify provenance, licenses, consent and actual product representation; test zoom manually on relevant pages.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No fabricated customer imagery, reviews or results. External imagery studies do not establish LeadQuote conversion effects."
+      ]
+    },
+    {
+      "id": "BP28",
+      "pages": [
+        9
+      ],
+      "principle": "Limit intrusive media and unnecessary motion",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts",
+          "src/runner.ts"
+        ],
+        "check": "Record autoplay controls, media state and motion affordances; retain reduced-motion testing.",
+        "implementedScope": "Unmuted autoplay declarations are counted. Audible playback, motion intensity, reduced-motion behavior and popup focus require verification."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Test pause/mute, reduced-motion behavior and whether overlays block core tasks.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "The existing quote popup remains in scope for accessible behavior; a generic anti-popup claim does not remove the approved interaction standard."
+      ]
+    },
+    {
+      "id": "BP29",
+      "pages": [
+        9
+      ],
+      "principle": "Personalize only with lawful, accurate and useful context",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Review business-specific context and role relevance without adding tracking or profile inference."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use synthetic tenants to check correct business/context separation; require separate consent and experiment design for new personalization.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "The cited frustration/sales figures are unverified; do not add personalization solely to follow a trend."
+      ]
+    },
+    {
+      "id": "BP30",
+      "pages": [
+        9
+      ],
+      "principle": "Keep cursor and interaction affordances accessible",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Prefer the existing standard pointer/focus behavior; inspect any existing custom cursor only."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Verify targets, keyboard use and zoom remain understandable if a custom cursor exists.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No custom cursor implementation is requested or needed for this audit."
+      ]
+    },
+    {
+      "id": "BP31",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Audit semantics, accessible names and contrast",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Run axe and inspect heading/landmark/field semantics; retain incomplete coverage explicitly.",
+        "implementedScope": "Axe provides partial automated accessibility evidence; no conformance certification follows."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check automated violations in context and manually verify reading order and contrast over actual backgrounds.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Automated checks never certify complete WCAG conformance. Accessibility is required independent of unverified disability/market-share figures."
+      ]
+    },
+    {
+      "id": "BP32",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Verify full keyboard access and meaningful focus order",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Use approved keyboard actions and flag positive tabindex/autofocus for review.",
+        "implementedScope": "Positive tabindex counts exist. Full keyboard sequence, autofocus and focus restoration are not established by this signal."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Manually complete key tasks and modal open/close using keyboard; inspect focus return and trapping.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Production inspect-only mode must not silently begin interactive keyboard journeys."
+      ]
+    },
+    {
+      "id": "BP33",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Keep focused controls visible and unobscured",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "planned",
+        "modules": [
+          "src/blueprint.ts"
+        ],
+        "check": "Inspect focus cues and sticky-overlay overlap in explicitly interactive fixture/staging scenarios."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Tab through mobile/desktop tasks and verify focused items are visible, including quote dialogs.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "WCAG AA minimum prohibits complete author-created obscuring; more stringent visibility must be labeled correctly."
+      ]
+    },
+    {
+      "id": "BP34",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Make status, error and image information available without visual inference",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Inspect live regions, associated errors and image alternatives without reading secret values.",
+        "implementedScope": "Declared live regions are counted and axe supplies partial semantic checks. Useful announcements and associated recovery require manual testing."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check actual screen-reader announcements for asynchronous saved/error/empty/loading states and meaningful images.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Presence of aria-live or alt alone does not prove a useful announcement or description."
+      ]
+    },
+    {
+      "id": "BP35",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Use truthful security and authority signals",
+      "applicability": "conditional",
+      "modes": [
+        "heuristic",
+        "manual",
+        "deferred"
+      ],
+      "priority": "P0",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "docs/leadquote-scope.md",
+          "src/report.ts"
+        ],
+        "check": "Flag unverifiable encryption/security/certification claims for owner review; inspect clarity without entering credentials."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Verify each displayed assurance against current provider and policy evidence.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not add padlock graphics, accreditation or encryption bit-length claims to imply unverified security. Payment execution is outside default scope."
+      ]
+    },
+    {
+      "id": "BP36",
+      "pages": [
+        10,
+        11,
+        13,
+        15
+      ],
+      "principle": "Present only verified social proof with context",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P0",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Review rating/count consistency, testimonial consent and provenance if proof appears."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check underlying source, date, sample and exact-use approval before recommending publication.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Blueprint ratings are illustrative. Do not invent review totals, transfer vendor results or predict uplift."
+      ]
+    },
+    {
+      "id": "BP37",
+      "pages": [
+        10
+      ],
+      "principle": "Avoid fabricated scarcity and manipulative persuasion",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P0",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "src/report.ts",
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Review truthful availability/offer explanations and transparent choices; exclude fabricated urgency."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Require owner-supplied factual terms and applicable approval before any countdown, offer or authority claim.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "The audit does not create campaigns, discounts or purchase pressure."
+      ]
+    },
+    {
+      "id": "BP38",
+      "pages": [
+        10,
+        11
+      ],
+      "principle": "Reduce anxiety with useful feedback, not artificial delays",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "src/runner.ts",
+          "src/report.ts"
+        ],
+        "check": "Recommend plain-language waiting, uncertainty and recovery messages."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Observe slow and failed synthetic operations; verify the interface responds as soon as state is known.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Reject mandatory two-second waits and unverified brand-recall claims; do not slow the product for persuasion."
+      ]
+    },
+    {
+      "id": "BP39",
+      "pages": [
+        11,
+        12
+      ],
+      "principle": "Make estimated prices, units and cost boundaries clear",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Verify configured visible currency, estimate ranges, modifiers and scope explanations in approved scenarios."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Compare synthetic setup/prices/preview values with authoritative expected values and distinguish estimate from final installation quote.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Not a real payment or refund test; no billing charge, tax or included service may be inferred from this PDF."
+      ]
+    },
+    {
+      "id": "BP40",
+      "pages": [
+        11,
+        13
+      ],
+      "principle": "Shipping and retail fulfillment examples are outside owner-app scope",
+      "applicability": "outside-scope",
+      "modes": [
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Do not score missing shipping estimators, delivery-speed options or parcel tracking as LeadQuote defects."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "If a future authorized retail flow exists, create a separate product-specific scope.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not confuse parcel delivery with LeadQuote lead delivery."
+      ]
+    },
+    {
+      "id": "BP41",
+      "pages": [
+        11,
+        13
+      ],
+      "principle": "Evaluate account friction within the actual purchase/access architecture",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Review wording and continuity of supported login/onboarding; preserve secure tenant access."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use designated synthetic identities only in a separately authorized authentication/purchase scenario.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not replace the existing secure setup flow with guest checkout or change account creation policy based on retail examples."
+      ]
+    },
+    {
+      "id": "BP42",
+      "pages": [
+        12
+      ],
+      "principle": "Minimize unnecessary form work without arbitrary field quotas",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Count visible inputs and identify duplicate/optional work for review.",
+        "implementedScope": "Visible form/input counts exist, without a field-count limit. Duplicate work and task necessity remain manual."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Map every onboarding field to actual fulfillment needs and compare supported completion paths.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Retail field-count averages and conversion gains are not LeadQuote targets; preserve required business and approval inputs."
+      ]
+    },
+    {
+      "id": "BP43",
+      "pages": [
+        12
+      ],
+      "principle": "Make required and optional fields understandable",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/blueprint.ts"
+        ],
+        "check": "Inspect required/aria-required metadata, associated labels, help and visible conventions.",
+        "implementedScope": "Required/aria-required metadata and local label/description cues are inspected. Global form instructions/localization can explain apparently missing cues."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Compare cues with actual validation on synthetic submissions and test error focus/announcement.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "A literal optional label is not the only valid design; a consistent, explained convention can be acceptable."
+      ]
+    },
+    {
+      "id": "BP44",
+      "pages": [
+        12
+      ],
+      "principle": "Recover from validation errors and application failures",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "fixtures/config.ts"
+        ],
+        "check": "Exercise invalid input, correction, interruption and uncertain save; capture bounded evidence."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Check preserved values, error association, actionable next step and no duplicate save after uncertainty.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Never retry live delivery, payment or publication to manufacture success."
+      ]
+    },
+    {
+      "id": "BP45",
+      "pages": [
+        12,
+        13
+      ],
+      "principle": "Keep support and applicable policies discoverable",
+      "applicability": "conditional",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "planned",
+        "modules": [
+          "src/blueprint.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Inspect named help/policy links and whether their destinations are within authorized navigation scope."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Manually verify relevant purchase/refund/support terms against product authority; classify external links untested if not allowlisted.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not invent shipping/returns policies or rewrite approved terms."
+      ]
+    },
+    {
+      "id": "BP46",
+      "pages": [
+        12,
+        15
+      ],
+      "principle": "Keep search scoped to the owner task and data set",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Test enquiry and price-book search where actually supported, including category/current-page limitations."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use known synthetic records and compare result scope, filters and empty states.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not claim global search or add local filters solely because an unrelated industry case succeeded."
+      ]
+    },
+    {
+      "id": "BP47",
+      "pages": [
+        12
+      ],
+      "principle": "Consider spelling tolerance and helpful empty states",
+      "applicability": "conditional",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "planned",
+        "modules": [
+          "src/runner.ts",
+          "src/blueprint.ts"
+        ],
+        "check": "Test a bounded typo and recovery in supported searches; inspect explicit no-result feedback."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Use fixture queries with known expected matches and record unsupported fuzzy search as a product question.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Fuzzy matching can hide precise identifiers; do not silently change equipment codes, capacities or prices."
+      ]
+    },
+    {
+      "id": "BP48",
+      "pages": [
+        12
+      ],
+      "principle": "Keep mobile navigation and filter scope clear",
+      "applicability": "direct",
+      "modes": [
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "src/observe.ts"
+        ],
+        "check": "Review mobile menu discovery, active context and sticky controls."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Execute approved mobile task paths and verify sticky elements do not obscure content/focus.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Sticky headers are not mandatory; preserve the application navigation model."
+      ]
+    },
+    {
+      "id": "BP49",
+      "pages": [
+        13
+      ],
+      "principle": "Label technical quantities and compatibility precisely",
+      "applicability": "direct",
+      "modes": [
+        "automated",
+        "heuristic",
+        "manual"
+      ],
+      "priority": "P1",
+      "implementation": {
+        "status": "current-partial",
+        "modules": [
+          "src/runner.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Review equipment type, capacity units, tier, currency, range and exclusions in price/quote views."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Compare synthetic fixture values with declared expected meanings and ask HVAC owners to interpret them.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not infer engineering suitability, installation compatibility or final price from a UI label alone."
+      ]
+    },
+    {
+      "id": "BP50",
+      "pages": [
+        13
+      ],
+      "principle": "De-emphasize genuinely optional promotional fields",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Only review existing coupon/promotion controls in a separately scoped purchase flow."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "If authorized later, compare clear optional disclosure without hiding valid benefits or terms.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No coupon implementation or automatic purchase-flow change is included."
+      ]
+    },
+    {
+      "id": "BP51",
+      "pages": [
+        13
+      ],
+      "principle": "Mobile-wallet and real payment execution are deferred",
+      "applicability": "outside-scope",
+      "modes": [
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "src/policy.ts",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Do not add wallet integrations or test actual transactions during owner usability auditing."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Require a separate sandbox payment plan, approved test identities and explicit operational authority.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Missing wallet options are not owner-app usability failures."
+      ]
+    },
+    {
+      "id": "BP52",
+      "pages": [
+        13,
+        14
+      ],
+      "principle": "Use measured outcomes and preregistered experiment questions",
+      "applicability": "conditional",
+      "modes": [
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/EXPERIMENT-PLAN.md"
+        ],
+        "check": "Turn supported findings into explicit hypotheses, not promised conversion improvements."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Define target population, outcome, randomization, baseline, effect size, power, stopping rule and guardrails before a real experiment.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No blueprint win rate, revenue-per-visitor, uplift or universal conversion-count minimum is accepted. Synthetic personas are not experiment participants."
+      ]
+    },
+    {
+      "id": "BP53",
+      "pages": [
+        14
+      ],
+      "principle": "Avoid peeking, changing tests midstream and confounded variants",
+      "applicability": "conditional",
+      "modes": [
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/EXPERIMENT-PLAN.md"
+        ],
+        "check": "Plan stable variant assignment and an analysis appropriate to the experiment design."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Review sample allocation, exposure, missing data and overlapping experiments; report inconclusive results honestly.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "A nominal confidence level or fixed event count alone does not establish an adequate design."
+      ]
+    },
+    {
+      "id": "BP54",
+      "pages": [
+        13,
+        14
+      ],
+      "principle": "Prefer evidence-backed clarity experiments within the existing brand",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "experiment"
+      ],
+      "priority": "P2",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "docs/EXPERIMENT-PLAN.md"
+        ],
+        "check": "Prioritize meaningful labels, headlines, help and task order over palette changes."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Choose one coherent hypothesis, retain branding and validate with real owners or an approved controlled experiment.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not rank expected lift using unrelated color-versus-copy percentages."
+      ]
+    },
+    {
+      "id": "BP55",
+      "pages": [
+        14
+      ],
+      "principle": "Keep variants consistent with downstream app expectations",
+      "applicability": "direct",
+      "modes": [
+        "manual"
+      ],
+      "priority": "P0",
+      "implementation": {
+        "status": "manual",
+        "modules": [
+          "AGENTS.md",
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Review recommendations for consistent terminology, theme and brand between entry and application pages."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Reject proposals that introduce a rebrand or conflicting purchase/setup promise.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No experiment or audit recommendation overrides existing brand and release authority."
+      ]
+    },
+    {
+      "id": "BP56",
+      "pages": [
+        14,
+        15
+      ],
+      "principle": "Treat catalogue and imagery case studies as hypotheses",
+      "applicability": "conditional",
+      "modes": [
+        "manual",
+        "experiment",
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Consider scoping/filtering and useful imagery only where an actual LeadQuote task supports them."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Require original case methodology and representative owner evidence before adopting a pattern.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "Do not import carousel layouts, human-photo sign-up effects, real-estate filter results or third-party customer assets as LeadQuote proof."
+      ]
+    },
+    {
+      "id": "BP57",
+      "pages": [
+        15
+      ],
+      "principle": "Do not infer causal price/revenue effects from external copy or game examples",
+      "applicability": "outside-scope",
+      "modes": [
+        "manual",
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/BLUEPRINT-PLAN.md"
+        ],
+        "check": "Exclude property-adjective correlations and mobile-game monetization comparisons from scores and product claims."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Revisit only through a separately scoped, relevant study with causal limits identified.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No paid game mechanic, price change, paywall or monetization change is proposed."
+      ]
+    },
+    {
+      "id": "BP58",
+      "pages": [
+        15
+      ],
+      "principle": "Email-subject and emoji case studies are outside this audit",
+      "applicability": "outside-scope",
+      "modes": [
+        "deferred"
+      ],
+      "priority": "P3",
+      "implementation": {
+        "status": "deferred",
+        "modules": [
+          "docs/leadquote-scope.md"
+        ],
+        "check": "Do not convert external open/click figures into LeadQuote messaging or delivery findings."
+      },
+      "verification": {
+        "status": "not-run-on-leadquote",
+        "method": "Any future communications experiment needs its own approved scope, recipient policy, measurement and provider evidence.",
+        "evidenceRequired": [
+          "scoped target and environment",
+          "dated observation or explicitly recorded manual result",
+          "limitations and exceptions"
+        ]
+      },
+      "caveats": [
+        "No customer send, email/SMS copy change or campaign enrollment is authorized."
+      ]
+    }
+  ]
+}

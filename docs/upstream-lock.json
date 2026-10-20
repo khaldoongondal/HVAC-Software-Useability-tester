@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedOn": "2026-10-20",
+  "reviewMethod": "Connected GitHub API: README, relevant source files, repository metadata, default-branch head. Public web also checked for unavailable repository.",
+  "mainRuntime": "Playwright; upstream tools are not five bundled execution engines.",
+  "sources": [
+    {
+      "repository": "ncklrs/claude-chrome-user-testing",
+      "url": "https://github.com/ncklrs/claude-chrome-user-testing",
+      "status": "reviewed",
+      "revision": "be80a8858848d84a41f1096082ce2a31262e912e",
+      "declaredVersion": "1.12.0",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 Nick Jensen",
+      "use": "Methodology adaptation: persona traits, timing, task outcomes and evidence-led reporting. No upstream personas or runtime installed.",
+      "files": [
+        "README.md",
+        "docs/personas.md",
+        "skills/user-testing/SKILL.md",
+        "agents/user-tester/AGENT.md",
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "jcrevoisier/human-behavior-simulation-kit",
+      "url": "https://github.com/jcrevoisier/human-behavior-simulation-kit",
+      "status": "unavailable",
+      "revision": null,
+      "declaredVersion": null,
+      "license": null,
+      "copyright": null,
+      "use": "No code or text integrated. Named repository and README returned 404 via connected GitHub; public URL also returned 404. Pacing, interruption and error-recovery code in this project is original.",
+      "files": []
+    },
+    {
+      "repository": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "status": "reviewed",
+      "revision": "aa093a843da5edbf323c0b4145c9b6a0db3ecde8",
+      "declaredVersion": "0.13.13",
+      "license": "MIT",
+      "copyright": "Copyright (c) 2024 Gregor Zunic",
+      "use": "Architecture reference for observation/action loops, vision input, step limits and typed output. Manual handoff specification only; executable browser-use adapter is not implemented or installed.",
+      "files": [
+        "README.md",
+        "pyproject.toml",
+        "examples/features/custom_output.py",
+        "browser_use/agent/service.py",
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "vercel-labs/agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "status": "reviewed",
+      "revision": "fd93075e55a21a47fcb36d7433361daa867a0580",
+      "declaredVersion": "0.39.1",
+      "license": "Apache-2.0",
+      "copyright": "Copyright 2025 Vercel Inc.",
+      "use": "Compact observed-ref interaction pattern in primary runner; original native-CLI adapter for marked loopback fixture inspection. agent-browser 0.39.1 is pinned as a development dependency and installed through package-lock.json.",
+      "runtimeVerification": {
+        "packageVersion": "0.39.1",
+        "platform": "win32-x64",
+        "nodeVersion": "24.18.0",
+        "verifiedOn": "2026-10-20",
+        "runStartedAt": "2026-10-20T22:35:16.978Z",
+        "command": "npm run audit -- native-demo --executable <absolute native executable path>",
+        "result": "passed",
+        "observed": "Local synthetic setup heading, business/area input controls and save button captured in snapshot; successful run confirmed browser close and removed temporary configuration directory.",
+        "additionalChecks": "TypeScript validation and three adapter guard tests passed.",
+        "limits": "Fixture-only smoke test; no authenticated or production audit acceptance. Installed package version is verified; byte correspondence with the researched upstream commit is not asserted."
+      },
+      "files": [
+        "README.md",
+        "package.json",
+        "agent-browser.schema.json",
+        "docs/content/docs/security.mdx",
+        "cli/src/flags.rs",
+        "cli/src/native/policy.rs",
+        "cli/src/native/actions.rs",
+        "LICENSE"
+      ]
+    },
+    {
+      "repository": "aj-geddes/useful-ai-prompts",
+      "url": "https://github.com/aj-geddes/useful-ai-prompts",
+      "status": "reviewed",
+      "revision": "3f5182cfd739fc113f4af5244a1cf342ad7f7911",
+      "declaredVersion": null,
+      "license": "MIT",
+      "copyright": "Copyright (c) 2025 AJ Geddes",
+      "use": "Methodology adaptation: semantic prompt sections, required/optional inputs, measurable quality criteria, strict schema validation. Original task/report schemas.",
+      "files": [
+        "README.md",
+        "prompts/evaluation-assessment/usability-testing-expert.md",
+        "skills/api-contract-testing/references/json-schema-validation.md",
+        "LICENSE"
+      ]
+    }
+  ]
+}

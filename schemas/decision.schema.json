@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "click",
+        "fill",
+        "press",
+        "check",
+        "select",
+        "wait",
+        "done",
+        "blocked"
+      ]
+    },
+    "ref": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^e[1-9][0-9]{0,2}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 2000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "rationale": {
+      "type": "string",
+      "maxLength": 1000
+    }
+  },
+  "required": [
+    "action",
+    "ref",
+    "value",
+    "rationale"
+  ],
+  "additionalProperties": false
+}

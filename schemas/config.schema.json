@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "baseUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "environment": {
+      "type": "string",
+      "enum": [
+        "fixture",
+        "staging",
+        "production"
+      ]
+    },
+    "allowedOrigins": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "allowedPaths": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "starts_with",
+        "pattern": "^\\/.*"
+      }
+    },
+    "mutationPaths": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "starts_with",
+        "pattern": "^\\/.*"
+      }
+    },
+    "isolatedTenant": {
+      "default": "",
+      "type": "string"
+    },
+    "journeys": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string",
+            "format": "starts_with",
+            "pattern": "^\\/.*"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "supported",
+              "exploratory"
+            ]
+          },
+          "personas": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "budgetSeconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "maxSteps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "click",
+                    "fill",
+                    "press",
+                    "check",
+                    "select",
+                    "wait",
+                    "reload",
+                    "interrupt",
+                    "typo",
+                    "misclick"
+                  ]
+                },
+                "target": {
+                  "type": "object",
+                  "properties": {
+                    "by": {
+                      "type": "string",
+                      "enum": [
+                        "role",
+                        "label",
+                        "text",
+                        "testId"
+                      ]
+                    },
+                    "value": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 300
+                    },
+                    "role": {
+                      "type": "string",
+                      "maxLength": 40
+                    }
+                  },
+                  "required": [
+                    "by",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                },
+                "value": {
+                  "type": "string",
+                  "maxLength": 2000
+                },
+                "durationMs": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 10000
+                },
+                "note": {
+                  "type": "string",
+                  "maxLength": 500
+                }
+              },
+              "required": [
+                "type"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "success": {
+            "type": "object",
+            "properties": {
+              "by": {
+                "type": "string",
+                "enum": [
+                  "role",
+                  "label",
+                  "text",
+                  "testId"
+                ]
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "role": {
+                "type": "string",
+                "maxLength": 40
+              }
+            },
+            "required": [
+              "by",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "expectedText": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allowedControls": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "by": {
+                  "type": "string",
+                  "enum": [
+                    "role",
+                    "label",
+                    "text",
+                    "testId"
+                  ]
+                },
+                "value": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 300
+                },
+                "role": {
+                  "type": "string",
+                  "maxLength": 40
+                }
+              },
+              "required": [
+                "by",
+                "value"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "goal",
+          "path",
+          "scope",
+          "personas",
+          "budgetSeconds",
+          "maxSteps",
+          "actions",
+          "success",
+          "notes",
+          "allowedControls"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "seed": {
+      "default": 42,
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "redactSelectors": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "captureScreenshots": {
+      "default": false,
+      "type": "boolean"
+    },
+    "allowModelDataTransfer": {
+      "default": false,
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "baseUrl",
+    "environment",
+    "allowedOrigins",
+    "allowedPaths",
+    "mutationPaths",
+    "isolatedTenant",
+    "journeys",
+    "seed",
+    "redactSelectors",
+    "captureScreenshots",
+    "allowModelDataTransfer"
+  ],
+  "additionalProperties": false
+}

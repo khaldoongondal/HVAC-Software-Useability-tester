@@ -1,0 +1,13 @@
+node_modules/
+artifacts/
+.env
+.env.*
+!.env.example
+*.log
+.auth/
+storage-state*.json
+playwright-report/
+test-results/
+.venv/
+__pycache__/
+.local/

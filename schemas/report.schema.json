@@ -1,0 +1,388 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string",
+      "enum": [
+        "fixture",
+        "staging",
+        "production"
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "scripted",
+        "agent",
+        "inspect"
+      ]
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": -9007199254740991,
+      "maximum": 9007199254740991
+    },
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer",
+            "minimum": -9007199254740991,
+            "maximum": 9007199254740991
+          },
+          "profile": {
+            "type": "string"
+          },
+          "business": {
+            "type": "string"
+          },
+          "techLiteracy": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "goals": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "context": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "viewport": {
+            "type": "object",
+            "properties": {
+              "width": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "height": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "width",
+              "height"
+            ],
+            "additionalProperties": false
+          },
+          "touch": {
+            "type": "boolean"
+          },
+          "typingDelayMs": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 200
+          },
+          "thinkDelayMs": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 3000
+          },
+          "networkLatencyMs": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 2000
+          },
+          "downloadKbps": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "targetSizePx": {
+            "type": "number",
+            "minimum": 24,
+            "maximum": 64
+          },
+          "patienceSteps": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 60
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "age",
+          "profile",
+          "business",
+          "techLiteracy",
+          "goals",
+          "context",
+          "viewport",
+          "touch",
+          "typingDelayMs",
+          "thinkDelayMs",
+          "networkLatencyMs",
+          "downloadKbps",
+          "targetSizePx",
+          "patienceSteps"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "personaId": {
+            "type": "string"
+          },
+          "journeyId": {
+            "type": "string"
+          },
+          "journeyName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "failed",
+              "blocked",
+              "not-run",
+              "unsupported"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "elapsedMs": {
+            "type": "number",
+            "minimum": 0
+          },
+          "injectedDelayMs": {
+            "type": "number",
+            "minimum": 0
+          },
+          "stepCount": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "budgetSeconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "snapshot",
+                    "action",
+                    "assertion",
+                    "accessibility",
+                    "network",
+                    "error",
+                    "metric"
+                  ]
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "string"
+                },
+                "screenshot": {
+                  "type": "string"
+                },
+                "details": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "kind",
+                "summary",
+                "url",
+                "timestamp"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "findings": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rule": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "detail": {
+                  "type": "string"
+                },
+                "dimension": {
+                  "type": "string",
+                  "enum": [
+                    "time",
+                    "cognitive",
+                    "language",
+                    "recovery"
+                  ]
+                },
+                "severity": {
+                  "type": "string",
+                  "enum": [
+                    "critical",
+                    "high",
+                    "medium",
+                    "low"
+                  ]
+                },
+                "confidence": {
+                  "type": "string",
+                  "enum": [
+                    "measured",
+                    "heuristic",
+                    "hypothesis"
+                  ]
+                },
+                "scope": {
+                  "type": "string",
+                  "enum": [
+                    "in-scope",
+                    "opportunity"
+                  ]
+                },
+                "evidenceIds": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "recommendation": {
+                  "type": "object",
+                  "properties": {
+                    "section": {
+                      "type": "string",
+                      "enum": [
+                        "Eliminated Steps",
+                        "Layout & Structural Rearrangements",
+                        "Trade-Specific Microcopy Rewrites",
+                        "Friction-Absorbing Engineering Enhancements"
+                      ]
+                    },
+                    "change": {
+                      "type": "string"
+                    },
+                    "before": {
+                      "type": "string"
+                    },
+                    "after": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "section",
+                    "change"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "id",
+                "rule",
+                "title",
+                "detail",
+                "dimension",
+                "severity",
+                "confidence",
+                "scope",
+                "evidenceIds",
+                "recommendation"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "personaId",
+          "journeyId",
+          "journeyName",
+          "status",
+          "reason",
+          "elapsedMs",
+          "injectedDelayMs",
+          "stepCount",
+          "budgetSeconds",
+          "evidence",
+          "findings"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sourceRevision": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "runId",
+    "createdAt",
+    "target",
+    "environment",
+    "mode",
+    "seed",
+    "personas",
+    "results",
+    "limitations",
+    "sourceRevision"
+  ],
+  "additionalProperties": false
+}

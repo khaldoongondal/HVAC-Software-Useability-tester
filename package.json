@@ -1,0 +1,30 @@
+{
+  "name": "hvac-usability-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Evidence-led HVAC owner setup and usability auditing for LeadQuote",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "audit": "tsx src/cli.ts",
+    "demo": "tsx src/cli.ts demo",
+    "check": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify": "npm run check && npm test",
+    "browser:install": "playwright install chromium",
+    "schemas": "tsx src/export-schemas.ts"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.64.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "agent-browser": "0.39.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

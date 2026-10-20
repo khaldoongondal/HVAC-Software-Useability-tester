@@ -1,0 +1,15 @@
+# Coverage of the five requested sources
+
+Source review and project verification date: **October 20, 2026**. The product is one original HVAC auditing harness with Playwright as its main executor. Using an upstream methodology is distinguished below from executing an upstream package.
+
+| Requested repository | Reviewed commit date and reference | Implemented contribution | Execution status |
+| --- | --- | --- | --- |
+| ncklrs/claude-chrome-user-testing | 2026-01-07, [be80a885](https://github.com/ncklrs/claude-chrome-user-testing/tree/be80a8858848d84a41f1096082ce2a31262e912e) | Original HVAC personas separate goals, context, comfort, pacing and patience; task outcomes are tied to observations | Methodology adapted; upstream Claude plugin and its persona files are not installed |
+| jcrevoisier/human-behavior-simulation-kit | No revision could be verified; checked 2026-10-20 | Original pacing, typo/correction, interruption and fixture-only safe-misclick mechanics cover the requested interaction purpose | Repository and README returned 404 through GitHub API; public URL also returned 404. No source integration or license claim |
+| browser-use/browser-use | 2026-10-17, [aa093a84](https://github.com/browser-use/browser-use/tree/aa093a843da5edbf323c0b4145c9b6a0db3ecde8) | Observation/action loop, optional screenshot input, bounded step execution and typed decisions inform the original runner; a [manual handoff contract](browser-use-handoff.md) records requirements for a future adapter | Architecture reference only. No browser-use Python executor is implemented, installed or claimed tested |
+| vercel-labs/agent-browser | 2026-10-20, [fd93075e](https://github.com/vercel-labs/agent-browser/tree/fd93075e55a21a47fcb36d7433361daa867a0580) | Observed compact references in the main runner; an original restricted native adapter inspects the marked loopback fixture | Package **0.39.1** is a pinned dev dependency. Native Windows fixture smoke passed on 2026-10-20 with Node **24.18.0** |
+| aj-geddes/useful-ai-prompts | 2026-03-04, [3f5182cf](https://github.com/aj-geddes/useful-ai-prompts/tree/3f5182cfd739fc113f4af5244a1cf342ad7f7911) | Explicit input/output boundaries, measurable task criteria and strict runtime schemas inform original prompts, configuration, decisions and reports | Methodology adapted; prompt library hooks and skills are not installed |
+
+The native agent-browser check observed the fixture's setup heading, business/area inputs and save control, then confirmed browser close and temporary configuration cleanup. It did not test native actions against LeadQuote. The reviewed Git commit and the installed package version are separate provenance facts; exact package-to-commit byte equivalence was not established.
+
+Synthetic profiles and deliberate interaction errors generate test hypotheses, not findings from real HVAC owners. No human completion time, satisfaction, adoption rate or accessibility certification is inferred. [sources.md](sources.md), [upstream-lock.json](upstream-lock.json) and [THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) carry detailed provenance and licensing.

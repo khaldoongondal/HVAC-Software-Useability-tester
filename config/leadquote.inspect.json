@@ -1,0 +1,45 @@
+{
+  "name": "LeadQuote source-grounded production inspection",
+  "baseUrl": "https://app.leadder.io",
+  "environment": "production",
+  "allowedOrigins": ["https://app.leadder.io"],
+  "allowedPaths": ["/auth/login", "/apps", "/portal/estimator", "/portal/leads", "/portal/delivery", "/portal/widget", "/leadquote/onboarding"],
+  "mutationPaths": [],
+  "isolatedTenant": "",
+  "seed": 42,
+  "redactSelectors": ["input", "textarea", "table", "[role=\"table\"]", "[data-sensitive]", "[data-private]", "[autocomplete=\"email\"]", "[autocomplete=\"tel\"]", "[aria-label=\"Account menu\"]"],
+  "captureScreenshots": false,
+  "allowModelDataTransfer": false,
+  "journeys": [
+    {
+      "id": "inspect-app-entry", "name": "Inspect app entry", "goal": "Inspect the available app chooser without selecting or changing an account.",
+      "path": "/apps", "scope": "supported", "personas": ["paper-to-digital", "mobile-dispatcher", "operations-hawk", "commercial-estimator", "solo-operator"],
+      "budgetSeconds": 30, "maxSteps": 1, "actions": [], "success": {"by": "role", "role": "heading", "value": "Where would you like to go?"},
+      "notes": ["Read-only candidate route from local source, not runtime acceptance.", "Requires an operator-provided isolated demo session; do not inspect real customer accounts.", "Unauthenticated or unavailable access is blocked, not a usability failure."], "allowedControls": []
+    },
+    {
+      "id": "inspect-setup", "name": "Inspect setup entry guidance", "goal": "Check whether missing onboarding context explains how to continue safely.",
+      "path": "/leadquote/onboarding", "scope": "supported", "personas": ["paper-to-digital", "solo-operator"],
+      "budgetSeconds": 30, "maxSteps": 1, "actions": [], "success": {"by": "role", "role": "heading", "value": "Your business-specific link is needed"},
+      "notes": ["No business invitation token is embedded in this configuration.", "Inspect-only networking may block a POST used to verify an existing onboarding session; report that boundary, never bypass it."], "allowedControls": []
+    },
+    {
+      "id": "inspect-pricebook", "name": "Inspect price-book entry", "goal": "Read the distinction between an initial draft, approved prices and published changes.",
+      "path": "/portal/estimator", "scope": "supported", "personas": ["paper-to-digital", "operations-hawk", "commercial-estimator", "solo-operator"],
+      "budgetSeconds": 30, "maxSteps": 1, "actions": [], "success": {"by": "role", "role": "heading", "value": "LeadQuote price book"},
+      "notes": ["Never publish, enable the widget or save a draft in this production profile.", "Feature holds are prerequisites and must not automatically be classified as UI defects."], "allowedControls": []
+    },
+    {
+      "id": "inspect-delivery", "name": "Inspect delivery explanations", "goal": "Determine whether the interface distinguishes a saved enquiry, destination acceptance and inbox delivery.",
+      "path": "/portal/delivery", "scope": "supported", "personas": ["mobile-dispatcher", "operations-hawk"],
+      "budgetSeconds": 30, "maxSteps": 1, "actions": [], "success": {"by": "role", "role": "heading", "value": "Lead delivery"},
+      "notes": ["Only an isolated synthetic demo account is suitable.", "Do not retry, reconcile, confirm outcomes or follow contact links. Tables are redacted."], "allowedControls": []
+    },
+    {
+      "id": "inspect-widget-help", "name": "Inspect widget setup guidance", "goal": "Check whether the owner can understand the embed and preview choices while retaining included setup assistance.",
+      "path": "/portal/widget", "scope": "supported", "personas": ["paper-to-digital", "mobile-dispatcher", "commercial-estimator", "solo-operator"],
+      "budgetSeconds": 30, "maxSteps": 1, "actions": [], "success": {"by": "role", "role": "heading", "value": "Widget Embed"},
+      "notes": ["Do not change the widget slug, install code, open an unapproved widget URL or submit an enquiry.", "No production changes are authorized by this inspection file."], "allowedControls": []
+    }
+  ]
+}
