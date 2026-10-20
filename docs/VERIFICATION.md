@@ -1,6 +1,6 @@
 # Build verification, October 20, 2026
 
-These checks validate the auditor against fictional local pages. They do not establish LeadQuote runtime acceptance, owner research, Gondal Tech creation or provider delivery. The live audit remains on hold pending KD's instruction to start the finalized plan.
+These checks validate the auditor against fictional local pages. They do not establish LeadQuote runtime acceptance, owner research, Gondal Tech creation or provider delivery. This build checkpoint preceded KD's later instruction to start. The subsequent guided Gondaltech run is recorded separately in [AUDIT-STATUS.md](AUDIT-STATUS.md).
 
 | Check | Observed result |
 | --- | --- |

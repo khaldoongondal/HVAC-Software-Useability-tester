@@ -1,6 +1,6 @@
 # Build plan, October 20, 2026
 
-Current finalized audit authority and review document: `FINAL-AUDIT-PLAN.md`. KD requested the complete plan before starting; no Gondal Tech creation or live audit execution should begin until KD says to start.
+Current finalized audit authority and review document: `FINAL-AUDIT-PLAN.md`. KD subsequently said to start, authorized manual creation, and superseded the existing-login arrangement with a separate new Gondaltech test identity. The identity and business now exist with LeadQuote access; widget and external delivery controls are disabled. Credentials and raw authenticated evidence remain private.
 
 KD requested an independent HVAC owner testing agent in a new Leadder subfolder and an initial push to the named public GitHub repository. The attached role brief supplies design requirements and synthetic persona archetypes; it does not authorize live account operations.
 

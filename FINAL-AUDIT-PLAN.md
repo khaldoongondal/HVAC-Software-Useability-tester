@@ -1,8 +1,10 @@
 # Final HVAC owner audit plan
 
-**Prepared October 20, 2026. Status: ready for KD review; audit not started.**
+**Prepared October 20, 2026. Status: execution authorized and started.**
 
-The auditor is an independent project in `Leadder/HVAC-Software-Useability-tester`. Its source is intended for the user-designated GitHub repository. KD's latest instruction requires this complete plan before audit execution. **Do not create Gondal Tech or begin its setup until KD says to start.** The prior browser work was limited to reading account-entry controls; no business was created or edited.
+Execution update: KD said to start, authorized manual backend creation, then superseded the existing-login requirement with a separate new test login for **Gondaltech**. The new identity and business have been created, and LeadQuote access is active. Public widget and external delivery controls are disabled. Credentials and identity identifiers stay in protected systems. The earlier existing-login language below records the reviewed plan and is superseded by this update for account creation only.
+
+The auditor is an independent project in `Leadder/HVAC-Software-Useability-tester`, pushed to the user-designated GitHub repository. KD reviewed the complete plan and subsequently instructed execution. The original plan-review hold is satisfied.
 
 ## 1. Objective and success standard
 
@@ -12,7 +14,7 @@ Completion means every planned task has an explicit outcome and supporting evide
 
 ## 2. Test business and preflight
 
-Create a **brand-new Gondal Tech business under KD's existing Leadder login**, not a separate login. Use the supported creation/provisioning workflow and verify its name, selected-business state, LeadQuote access and initial setup state. Never rename an existing client, borrow an existing account's completed onboarding or use Cool Aid.
+Current execution arrangement: **Gondaltech is a brand-new business under the separate test login KD later supplied**. KD explicitly authorized manual backend creation and LeadQuote access. The new business, selected-business state and owner access were verified. The original existing-login arrangement is superseded. Never rename an existing client, borrow another account's completed onboarding or use Cool Aid.
 
 Before creating it:
 
@@ -152,6 +154,6 @@ Laya: skip, because representative labeled/calibrated project data is absent. Op
 
 ## 13. Start and stop rules
 
-The next live step occurs only after KD says to start this plan. First verify the supported Gondal Tech creation path and then create and confirm the new business. Continue autonomously through available authorized tasks. Stop dependent stages only for a concrete prerequisite: missing creation path, payment/terms, unavailable release capability, controlled recipient/site details, or a consequential action outside the approved audit scope.
+KD said to start and the new identity/business were created under the later clarified scope. Continue autonomously through available authorized tasks. Stop dependent stages only for a concrete prerequisite: missing intake context, payment/terms, unavailable release capability, controlled recipient/site details, or a consequential action outside the approved audit scope. Report actual completed and blocked coverage; the plan is not proof of acceptance.
 
 Do not change unrelated businesses, billing, app releases, databases or provider configuration to manufacture a pass. No user/prospect communications, real payments or public publication follow merely from this plan. A blocked task is reported with the exact condition and the smallest action needed to continue.

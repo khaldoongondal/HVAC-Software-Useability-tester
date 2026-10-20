@@ -8,7 +8,7 @@ Use fictional data and the bundled local fixture by default. Production mode is 
 
 October 20 continuation: KD requested a brand-new Gondal Tech business under the existing login for a subsequent complete owner audit. Follow docs/GONDAL-TECH-AUDIT-PLAN.md and verify creation before dependent tasks. Preserve the runner's default production containment; separately scoped, supervised browser actions do not weaken that default. The supplied UI blueprint is incorporated via docs/BLUEPRINT-PLAN.md; its statistics and imperative wording are reference material, not independent authority, verified business results or blanket compliance criteria.
 
-Latest instruction: present FINAL-AUDIT-PLAN.md before starting. Do not create Gondal Tech or execute live audit journeys until KD says to start. Source verification and the requested repository push remain authorized.
+Latest instruction, October 20: KD reviewed the plan, said to start, authorized manual backend creation, then requested a separate new Gondaltech login and expressly assigned it LeadQuote access. The initial plan-review hold is satisfied. The new identity and business exist with LeadQuote only; external delivery and the public widget are disabled. Continue owner setup and daily-use auditing on this business. The earlier existing-login requirement is superseded. Keep credentials, identity identifiers and raw authenticated captures outside this public repository.
 
 Auth state must stay outside this repository and OneDrive; pass its absolute path through HVAC_AUTH_STATE. Runtime artifacts are ignored and can contain sensitive screen content. Never commit them without a specific review. Do not copy private app source into this public repository.
 

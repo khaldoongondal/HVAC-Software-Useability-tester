@@ -2,7 +2,7 @@
 
 A runnable auditor for LeadQuote setup and owner use: five synthetic HVAC personas, reproducible browser journeys, field-condition emulation, an optional vision planner and an offline evidence-linked report.
 
-**Audit status: awaiting KD's instruction to start.** The [finalized audit plan](FINAL-AUDIT-PLAN.md) covers creation of Gondal Tech under the existing login, full setup, later changes and daily use. No Gondal Tech business has been created and no live audit has started. See [build verification](docs/VERIFICATION.md) for the separate local engineering checks.
+**Audit status: execution started October 20, 2026.** KD subsequently chose a separate new test login for **Gondaltech**, authorized manual creation and assigned LeadQuote access. The new business exists with external delivery and the public widget disabled. The [finalized audit plan](FINAL-AUDIT-PLAN.md) records the scope update. See [build verification](docs/VERIFICATION.md) for the separate local engineering checks.
 
 **Start with the local demo.** It uses fictional data, includes intentional defects, needs no model key and never connects to LeadQuote. Persona findings are hypotheses for real owner research, not testimonials or measured human behavior.
 
@@ -50,9 +50,9 @@ Each persona/journey has a fresh browser context. Step caps and a deadline of th
 
 ## Later LeadQuote audit
 
-The requested audit business is **Gondal Tech, newly created under the existing Leadder login**. Follow the [complete setup, changes and daily-work plan](docs/GONDAL-TECH-AUDIT-PLAN.md). Its creation and runtime journeys must be evidenced; the plan does not claim the business already exists.
+The active audit business is **Gondaltech under a separate new test login**, as KD subsequently requested. Its creation and LeadQuote access were verified in the guided October 20 run. Follow the [complete setup, changes and daily-work plan](docs/GONDAL-TECH-AUDIT-PLAN.md) and [current audit status](docs/AUDIT-STATUS.md). The guided run does not establish an authenticated automated-runner session.
 
-1. Select an authorized isolated test tenant with synthetic records. Never use Cool Aid or a real customer account. This build has not established test-tenant access.
+1. For future automated runs, select an authorized isolated test tenant with synthetic records. Never use Cool Aid or a real customer account. Verify the selected session explicitly; the guided Gondaltech run does not automatically supply harness authentication.
 2. Review [`config/leadquote.inspect.json`](config/leadquote.inspect.json). It covers app entry, onboarding guidance, price-book entry, delivery explanation and widget help. Routes are grounded in a dated source snapshot, not current runtime acceptance.
 3. Create test-account authentication state through your approved login process if needed. Keep it outside this project and OneDrive, then set `HVAC_AUTH_STATE` to its absolute path in the process environment. Never commit it.
 4. Run `npm run audit -- run --config config/leadquote.inspect.json`. Screenshots and model transfer are disabled. Unavailable pages or missing sessions are blocked cases, not product defects.

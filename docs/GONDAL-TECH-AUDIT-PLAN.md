@@ -1,12 +1,12 @@
 # Gondal Tech: complete HVAC owner lifecycle audit
 
-KD authorized a **new business named Gondal Tech under the existing Leadder login** on October 20, 2026. This is the dedicated audit business. Do not replace an existing account, duplicate the user's identity, use Cool Aid or borrow another demo's setup state.
+KD initially requested a new business under the existing login, then explicitly changed the arrangement to a **separate new Gondaltech test login and business**, with manual backend creation and LeadQuote access authorized. Creation and owner access were verified October 20, 2026. Do not replace an existing account, create additional identities beyond that scope, use Cool Aid or borrow another demo's setup state. Keep login details in protected systems.
 
 ## Entry gate
 
 Use the supported account creation workflow. Verify the new business in the account chooser, its LeadQuote access and initial state. Distinguish manual administration from customer purchase/claim flow; creating a demo business does not prove payment, fulfillment or customer access works. If creation is unavailable in the UI, record the exact blocker before dependent tasks. Do not mark the audit started on the new business until creation is verified.
 
-The creator's software-owner role can expose extra navigation or privileges. Capture that limitation. Never remove the user's platform role to simulate a customer; a true least-privilege pass requires a separately approved test identity or an established supported role-preview mechanism.
+The original preflight used KD's software-owner login. The guided owner audit now uses the expressly authorized separate test identity, shown as Gondaltech's account owner with LeadQuote only. Never remove KD's platform role to simulate a customer. A visible role/app check is not exhaustive authorization certification.
 
 ## Scenario matrix
 
